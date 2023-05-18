@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
-TROJAN_WSPATH=${TROJAN_WSPATH:-'/trojan'}
-SS_WSPATH=${SS_WSPATH:-'/shadowsocks'}
+UUID=${UUID:-'38c505d3-4893-4210-a71f-8fb3b334d959'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/38c505d3-4893-4210-a71f-8fb3b334d959-vmess'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/38c505d3-4893-4210-a71f-8fb3b334d959-vless'}
+TROJAN_WSPATH=${TROJAN_WSPATH:-'/38c505d3-4893-4210-a71f-8fb3b334d959-trojan'}
+SS_WSPATH=${SS_WSPATH:-'/38c505d3-4893-4210-a71f-8fb3b334d959-shadowsocks'}
 
 generate_config() {
   cat > config.json << EOF
@@ -90,7 +90,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -117,7 +117,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -144,7 +144,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -172,7 +172,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
